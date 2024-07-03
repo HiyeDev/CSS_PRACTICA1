@@ -54,6 +54,10 @@ nav a {
 }
 
 #contenido_resenyas article img a {
-    display: block;
+    display: flex;
     flex-direction: column;
+}
+
+#contenido_resenyas article > p {
+    align-items: flex-end;
 }
