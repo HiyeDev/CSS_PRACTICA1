@@ -2,6 +2,10 @@
 ENCABEZADO
 */
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -22,8 +26,12 @@ NAVEGADOR PARTE IZQUIERDa
 */
 
 #contenido_central nav {
-    width: 18%;
+    width: 15%;
     font-size: 0.8em;
+    color: coral;
+}
+
+a {
     color: coral;
 }
 
@@ -39,7 +47,7 @@ nav a {
 #contenido_resenyas {
     display: flex;
     flex-direction: column;
-    width: 82%;
+    width: 85%;
 }
 
 #contenido_resenyas h2 {
@@ -49,15 +57,30 @@ nav a {
     font-style: bold;
 }
 
-#contenido_resenyas article {
+article {
     display: flex;
+    padding: 0 10% 1% 10%;
+    border-bottom: solid 0.1em grey;
 }
 
-#contenido_resenyas article img a {
+#contenido_resenyas article .container_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5%;
+}
+.container_image img{
+    border: solid 0.1em black;
+}
+
+
+
+#contenido_resenyas article .container_text {
     display: flex;
     flex-direction: column;
 }
 
-#contenido_resenyas article > p {
-    align-items: flex-end;
+.titulo, .autor, .sinopsis {
+    margin: 0.5em 0 0.5em 0;
 }
+
